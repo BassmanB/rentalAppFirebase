@@ -77,7 +77,7 @@ public class Home extends AppCompatActivity
 
         View headerView = navigationView.getHeaderView(0);
         txtFullName = (TextView)findViewById(R.id.txtFullName);
-        txtFullName.setText(Common.currentUser.getName());
+      //  txtFullName.setText(Common.currentUser.getName());
 
         recycler_menu = (RecyclerView)findViewById(R.id.recycler_menu);
         recycler_menu.setHasFixedSize(true);
