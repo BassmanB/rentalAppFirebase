@@ -34,7 +34,7 @@ public class ObjectList extends AppCompatActivity {
         setContentView(R.layout.activity_food_list);
 
         database = FirebaseDatabase.getInstance();
-        objectList = database.getReference("Objects");
+        objectList = database.getReference("Object");
 
         recyclerView = (RecyclerView)findViewById(R.id.recycler_food);
         recyclerView.setHasFixedSize(true);
@@ -42,8 +42,8 @@ public class ObjectList extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         if (getIntent() != null)
-            categoryId = getIntent().getStringExtra("CategoryId");
-        if(!categoryId.isEmpty() && categoryId != null){
+            categoryId = getIntent().getStringExtra("CategoryID");
+        if( categoryId != null && !categoryId.isEmpty()){
             loadListObject(categoryId);
         }
     }
