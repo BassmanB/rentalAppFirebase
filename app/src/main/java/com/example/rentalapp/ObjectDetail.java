@@ -7,6 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.rentalapp.Common.Common;
 
 import com.example.rentalapp.Model.Object;
 import com.google.firebase.database.DataSnapshot;
@@ -53,7 +56,14 @@ public class ObjectDetail extends AppCompatActivity {
         if(getIntent() !=  null)
             objectId = getIntent().getStringExtra("objectId");
         if(!objectId.isEmpty()){
-            getDetailObject(objectId);
+
+
+            if(Common.isConnectedToInternet(getBaseContext()))
+                getDetailObject(objectId);
+            else{
+                Toast.makeText(ObjectDetail.this, "Please check your connection !!", Toast.LENGTH_SHORT).show();
+                return;
+            }
         }
     }
 

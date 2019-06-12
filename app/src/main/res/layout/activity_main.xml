@@ -61,7 +61,7 @@
                     android:layout_margin="15dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:fButtonColor="@color/fButton_color"
+                    app:fButtonColor="@color/colorPrimaryDark"
 
                     />
         </LinearLayout>

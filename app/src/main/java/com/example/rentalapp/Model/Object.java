@@ -1,10 +1,12 @@
 package com.example.rentalapp.Model;
 
 public class Object {
+
     private String name, price, menuId, description, image;
     public Object()
     {
     }
+
 
     public void setName(String Name, String Price, String MenuId, String Description, String Image) {
         image = Image;
