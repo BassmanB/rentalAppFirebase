@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/rower"
+    android:alpha="0.9">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:tint="#FFF"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/logo"
+                android:layout_marginTop="100dp"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/txtSlogan"
+                android:text="@string/slogan"
+                android:textColor="#FFF"
+                android:layout_marginTop="30dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+              <info.hoang8f.widget.FButton
+                  android:id="@+id/buttonSignUp"
+                  android:layout_width="0dp"
+                  android:text="Sign Up"
+                  android:textColor="#666"
+                  android:layout_margin="15dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  app:fButtonColor="@color/fButton_color"
+                  />
+
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/buttonSignIn"
+                    android:layout_width="0dp"
+                    android:text="Sign In"
+                    android:textColor="#666"
+                    android:layout_margin="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:fButtonColor="@color/fButton_color"
+
+                    />
+        </LinearLayout>
+</RelativeLayout>
