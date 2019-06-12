@@ -51,7 +51,7 @@ public class ObjectDetail extends AppCompatActivity {
 
 
         if(getIntent() !=  null)
-            objectId = getIntent().getStringExtra("ObjectId");
+            objectId = getIntent().getStringExtra("objectId");
         if(!objectId.isEmpty()){
             getDetailObject(objectId);
         }

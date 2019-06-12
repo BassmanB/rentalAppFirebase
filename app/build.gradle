@@ -22,6 +22,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
     implementation 'com.github.mancj:MaterialSearchBar:0.7.1'
     implementation 'com.android.support:support-v4:26.1.0'
     implementation 'com.android.support:animated-vector-drawable:26.1.0'
@@ -35,6 +36,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.google.firebase:firebase-core:16.0.9'
     implementation 'com.google.firebase:firebase-database:17.0.0'
+    implementation 'com.google.firebase:firebase-storage:17.0.0'
+    implementation 'com.google.firebase:firebase-auth:17.0.0'
 
     implementation 'com.rengwuxian.materialedittext:library:2.1.4'
     implementation 'com.github.jd-alexander:android-flat-button:v1.1'

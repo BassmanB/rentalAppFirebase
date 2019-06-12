@@ -1,56 +1,56 @@
 package com.example.rentalapp.Model;
 
 public class Object {
-    private String Name, Price, MenuId, Description, Image;
+    private String name, price, menuId, description, image;
     public Object()
     {
     }
 
-    public void setName(String name, String price, String menuId, String description, String image) {
-        Image = image;
-        Name = name;
-        Price = price;
-        MenuId = menuId;
-        Description  = description;
+    public void setName(String Name, String Price, String MenuId, String Description, String Image) {
+        image = Image;
+        name = Name;
+        price = Price;
+        menuId = MenuId;
+        description  = Description;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
-    public void setName(String name) {
-        Name = name;
+    public void setName(String Name) {
+        name = Name;
     }
 
     public String getPrice() {
-        return Price;
+        return price;
     }
 
-    public void setPrice(String price) {
-        Price = price;
+    public void setPrice(String Price) {
+        price = price;
     }
 
     public String getMenuId() {
-        return MenuId;
+        return menuId;
     }
 
-    public void setMenuId(String menuId) {
-        MenuId = menuId;
+    public void setMenuId(String MenuId) {
+        menuId = MenuId;
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
-    public void setDescription(String description) {
-        Description = description;
+    public void setDescription(String Description) {
+        description = Description;
     }
 
     public String getImage() {
-        return Image;
+        return image;
     }
 
-    public void setImage(String image) {
-        Image = image;
+    public void setImage(String Image) {
+        image = Image;
     }
 }

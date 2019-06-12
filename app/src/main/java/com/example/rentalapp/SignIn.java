@@ -30,12 +30,9 @@ public class SignIn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
-
         edtPassword = (MaterialEditText)findViewById(R.id.edtPassword);
         edtPhone = (MaterialEditText)findViewById(R.id.edtPhone);
         btnSignIn = (Button)findViewById(R.id.buttonSignIn);
-
-
 
         //Iniit firebase
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -46,10 +43,7 @@ public class SignIn extends AppCompatActivity {
 
                 final ProgressDialog mDialog = new ProgressDialog(SignIn.this);;
                 mDialog.setMessage("Please waiting...");
-
                 mDialog.show();
-
-
 
                 table_user.addValueEventListener(new ValueEventListener() {
                     @Override
@@ -59,15 +53,11 @@ public class SignIn extends AppCompatActivity {
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
-
                         mDialog.dismiss();
                         //Check if user not exist in database
 
                         if (dataSnapshot.child(edtPhone.getText().toString()).exists()) {
-
-
                             //Get user information
-
                             User user = dataSnapshot.child(edtPhone.getText().toString()).getValue(User.class);
                             if (user.getPassword().equals(edtPassword.getText().toString())) {
                                 {
